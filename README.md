@@ -21,6 +21,7 @@ There is a branch for each group. Here are the branch names:
  - vmm
  - windowing
 
+Project tutorial (credits to Andy): https://docs.google.com/document/d/18X6Z5hzBp_Adb_Kr06RXS1P2jYYWlZGpvNtL05Eqtq0/edit
 
 Before you start working make sure that you checkout to your branch:
 ```git checkout [branch name]```
