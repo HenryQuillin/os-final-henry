@@ -25,7 +25,14 @@ There is a branch for each group. Here are the branch names:
 Before you start working make sure that you checkout to your branch:
 ```git checkout [branch name]```
 To pull changes from the main branch as you work, you can do ```git pull origin main``` while you are checked out to your branch. Once you have finalized some changes, you push your changes to you branch with ```git push origin [branch name]``` and go online to make a pull request to merge into main and someone will review and handle it.
+
+
+Check out the issues and projects tab to update your status and see what needs to get done.
+
+
 Other than that, let's try to have fun :)
+
+
 
 ### Initial comments by Ojas
 I realize this may not be helpful cuz its brief oops oh well
