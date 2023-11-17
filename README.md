@@ -2,6 +2,8 @@
 
 ## Guidelines
 DO NOT PUSH TO MAIN BRANCH
+
+
 There is a branch for each group. Here are the branch names:
  - authsecurity
  - dynamiclinking
@@ -18,6 +20,7 @@ There is a branch for each group. Here are the branch names:
  - texteditor
  - vmm
  - windowing
+
 
 Before you start working make sure that you checkout to your branch:
 ```git checkout [branch name]```
