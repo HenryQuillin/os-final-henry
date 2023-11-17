@@ -1,6 +1,29 @@
 # os-final
 
-## Initial comments by Ojas
+## Guidelines
+DO NOT PUSH TO MAIN BRANCH
+There is a branch for each group. Here are the branch names:
+ - authsecurity
+ - dynamiclinking
+ - filesystem
+ - graphics
+ - kerneloptims
+ - keymouse
+ - libc
+ - main
+ - python
+ - shell
+ - signals
+ - sound
+ - texteditor
+ - vmm
+ - windowing
+Before you start working make sure that you checkout to your branch:
+```git checkout [branch name]```
+Once you have finalized some changes, make a pull request to merge into main and someone will review and handle it.
+Other than that, let's try to have fun :)
+
+### Initial comments by Ojas
 I realize this may not be helpful cuz its brief oops oh well
 Also I dont think you need to know any of this because we need to decide on standard interfaces between teams, but here it is anyways
 Here is a list of some of the interfaces / data structures I have:
