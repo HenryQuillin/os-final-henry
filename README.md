@@ -41,7 +41,7 @@ Here is a list of some of the interfaces / data structures I have:
   - RBTree<T, LockType>: a red-black tree protected by specified locktype
     - similar null value situation
     - depends on the struct CompareFunction<K>
-    - supports identifier-based search and removal (i.e. you can use a different type than the RBTree specified to search or remove from it, just specify a comparator. this is very useful if you want to use multiple types of keys)
+    - supports identifier-based search and removal (i.e. you can use a different type than the RBTree specified to search or remove from it, just specify a comparator. this is very useful if you want to use multiple types of keys for the same data)
   - you can find examples of the Function types throughout vmm.cc or ask me lol
 - libk
   - streq, strcmp, strcpy, etc.
