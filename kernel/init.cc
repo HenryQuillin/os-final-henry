@@ -18,6 +18,7 @@
 #include "tss.h"
 #include "u8250.h"
 #include "vmm.h"
+#include "keyboard.h"
 
 struct KernelRuntimeStack {
     static constexpr int BYTES = 8192;
@@ -154,6 +155,7 @@ extern "C" void kernelInit(void) {
 
     // Initialize the PIT
     Pit::init();
+    keyboard_init();
 
     auto id = SMP::me();
 

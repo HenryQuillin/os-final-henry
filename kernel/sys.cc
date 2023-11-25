@@ -11,6 +11,7 @@
 #include "process.h"
 #include "stdint.h"
 #include "vmm.h"
+#include "keyboard.h"
 
 extern "C" int sysHandler(SYS::Call::EAX eax, ProcessManagement::RegisterState* regs) {
     return SYS::Call::handle_syscall(eax, regs);
@@ -193,9 +194,9 @@ int SYS::Call::handle_syscall(EAX eax, RegisterState* regs) {
             int fd = get_param<int>(user_esp, 0);
             return return_or_yield(dup(fd));
         }
-        case GETCH: {
-            Debug::printf("getch called\n");
-            return 'a'; 
+        case GETCH:
+        {
+            return getChar(); 
         }
 
         default:
