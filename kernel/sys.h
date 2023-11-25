@@ -38,6 +38,7 @@ class SYS {
             WRITE2 = 1025,
             PIPE = 1026,
             DUP = 1028,
+            GETCH = 1100,
         };
 
         // handles the syscall
@@ -66,6 +67,7 @@ class SYS {
         static ssize_t write(int fd, void* buffer, size_t len);                        // 1 or 1025
         static int pipe(int* write_fd, int* read_fd);                                  // 1026
         static int dup(int fd);
+        static char getch();
     };
 
     struct Helper {

@@ -193,6 +193,10 @@ int SYS::Call::handle_syscall(EAX eax, RegisterState* regs) {
             int fd = get_param<int>(user_esp, 0);
             return return_or_yield(dup(fd));
         }
+        case GETCH: {
+            Debug::printf("getch called\n");
+            return 'a'; 
+        }
 
         default:
             Debug::panic("syscall %d (%x, %x, %x)\n", eax, user_esp[0], user_esp[1], user_esp[2]);

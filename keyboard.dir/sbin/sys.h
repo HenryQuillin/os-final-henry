@@ -72,5 +72,5 @@ extern int pipe(int* write_fd, int* read_fd);
 extern int dup(int fd);
 
 // 1100
-extern int getch();
+extern char getch();
 #endif

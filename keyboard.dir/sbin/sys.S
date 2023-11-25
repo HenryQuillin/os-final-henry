@@ -161,6 +161,9 @@ dup:
 	mov $1028,%eax
 	int $48
 	ret
+
+	# char getch()
+	.global getch
 getch:
 	mov $1100,%eax
 	int $48
